@@ -1,10 +1,7 @@
 'use strict';
 
-let user;
-let number;
-
-number = Math.floor(Math.random() * 100);
-user = prompt('Угадай число от одного до 100');
+const number = Math.floor(Math.random() * 100);
+let user = prompt('Угадай число от одного до 100');
 
 const isNumber = function (num) {
     return !isNaN(parseFloat(num)) && isFinite(num);
@@ -35,7 +32,5 @@ const game = function () {
             break;
     }
 };
-
-
 
 game();
